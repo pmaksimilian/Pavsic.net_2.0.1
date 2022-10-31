@@ -27,5 +27,5 @@ setTimeout(() => {
     setTimeout(() => {
         title.classList.remove("displayBlock");
         boxes.classList.add("show");
-    }, 200);
+    }, 400);
 }, animationDuration);

@@ -139,10 +139,13 @@ header {
 /* OBJECTS */
 
 .mainTitleContainer {
-    position: relative;
+    position: absolute;
+    padding-top: 3px;
     display: none;
-    animation: toHeader 3s 4s forwards;
-    -webkit-animation: toHeader 3s 4s forwards;
+    animation: toHeader 7s forwards;
+    -webkit-animation: toHeader 7s forwards;
+    width: fit-content;
+    /* transform: translate(calc(50vw - 50%), calc(50vh - 50%)) scale(2); */
     /* sešteti vrednosti sekund sta animationDuration v intro.js */
 }
 
@@ -151,8 +154,10 @@ header {
 }
 
 .mainTitle {
-    width: 610px;
-    font-size: 6rem;
+    /* width: 610px; */
+    width: 183px;
+    /* font-size: 6rem; */
+    font-size: 1.8rem;
     text-transform: uppercase;
     animation: typing 1s steps(9) forwards, blink 500ms step-end infinite alternate;
     -webkit-animation: typing 1s steps(9) forwards, blink 500ms step-end infinite alternate;
@@ -162,13 +167,15 @@ header {
 }
 
 .submainTitle {
-    position: absolute;
+    /* position: absolute; */
     visibility: hidden;
     left: 0;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 0.6rem;
     animation: typingS 1s 1s steps(13) forwards, blink 500ms step-end infinite alternate;
     -webkit-animation: typingS 1s 1s steps(13) forwards, blink 500ms step-end infinite alternate;
-    width: 600px;
+    /* width: 600px; */
+    width: 183px;
     border-right: 3px solid var(--option1);
     white-space: nowrap;
     overflow: hidden;
@@ -272,21 +279,37 @@ header {
 }
 
 @-webkit-keyframes toHeader {
+    0% {
+        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
+    }
+
+    60% {
+        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
+    }
+
     100% {
-        transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
+        transform: translate(41px, 0) scale(1);
     }
 }
 
 @keyframes toHeader {
+    0% {
+        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
+    }
+
+    60% {
+        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
+    }
+
     100% {
-        transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
+        transform: translate(41px, 0) scale(1);
     }
 }
 
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 720px) {
-    .mainTitle {
+    /* .mainTitle {
         font-size: 3rem;
         width: 305px;
     }
@@ -294,17 +317,33 @@ header {
     .submainTitle {
         font-size: 1rem;
         width: 300px;
-    }
+    } */
 
     @-webkit-keyframes toHeader {
+        0% {
+            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
+        }
+    
+        60% {
+            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
+        }
+    
         100% {
-            transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
+            transform: translate(41px, 0) scale(1);
         }
     }
-
+    
     @keyframes toHeader {
+        0% {
+            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
+        }
+    
+        60% {
+            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
+        }
+    
         100% {
-            transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.5);
+            transform: translate(41px, 0) scale(1);
         }
     }
   }
