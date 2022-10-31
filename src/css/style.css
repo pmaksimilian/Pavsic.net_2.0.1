@@ -27,10 +27,6 @@ h1, h2 {
     font-weight: normal;
 }
 
-a {
-    color: var(--option1);
-}
-
 .main-wrapper {
     width: 100vh;
     height: 100vw;
@@ -130,11 +126,11 @@ header {
     background-color: var(--main);
 }
 
-/* .firstPage {
+.firstPage {
     width: 120vw;
     border-top-right-radius: 130px;
     border-bottom-right-radius: 130px;
-} */
+}
 
 /* OBJECTS */
 
@@ -143,7 +139,7 @@ header {
     display: none;
     animation: toHeader 3s 4s forwards;
     -webkit-animation: toHeader 3s 4s forwards;
-    /* sešteti vrednosti sekund sta animationDuration v script.js */
+    /* sešteti vrednosti sekund sta animationDuration v intro.js */
 }
 
 .displayBlock {
@@ -204,7 +200,7 @@ header {
     overflow: hidden;
     opacity: 0;
     transition: opacity 8s;
-    text-align: center;
+    display: flex;
 }
 
 .mainBoxesContainer.show {
@@ -273,12 +269,38 @@ header {
 
 @-webkit-keyframes toHeader {
     100% {
-        transform: translate(-43.8vw, -47.5vh) scale(0.25);
+        transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
     }
 }
 
 @keyframes toHeader {
     100% {
-        transform: translate(-43.8vw, -47.5vh) scale(0.25);
+        transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
     }
 }
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 720px) {
+    .mainTitle {
+        font-size: 3rem;
+        width: 305px;
+    }
+
+    .submainTitle {
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    @-webkit-keyframes toHeader {
+        100% {
+            transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.25);
+        }
+    }
+
+    @keyframes toHeader {
+        100% {
+            transform: translate(calc(-50vw + 113px), -47.5vh) scale(0.5);
+        }
+    }
+  }
