@@ -23,8 +23,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-html,body {height:100%}
-
 a {
     color: var(--option1);
 }
@@ -33,7 +31,7 @@ h1, h2 {
     font-weight: normal;
 }
 
-.main-wrapper {
+/* .main-wrapper {
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
@@ -46,7 +44,12 @@ h1, h2 {
     -ms-overflow-style: none;
 
     user-select: none;
+} */
+
+.main-wrapper, .horizontal-wrapper {
+    height: 100%;
 }
+
 
 .stopScroll {
     overflow-y: hidden;
@@ -56,19 +59,19 @@ h1, h2 {
     display:none;
 }
 
-.horizontal-wrapper {
+/* .horizontal-wrapper {
     display: flex;
     flex-direction: row;
     width: fit-content;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     background-color: var(--bright);
-}
+} */
 
 .page {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     color: var(--option1);
 }
 
