@@ -23,6 +23,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: var(--option1);
+}
+
 h1, h2 {
     font-weight: normal;
 }
@@ -126,11 +130,6 @@ header {
     background-color: var(--main);
 }
 
-.firstPage {
-    width: 120vw;
-    border-top-right-radius: 130px;
-    border-bottom-right-radius: 130px;
-}
 
 /* OBJECTS */
 
@@ -200,7 +199,7 @@ header {
     overflow: hidden;
     opacity: 0;
     transition: opacity 8s;
-    display: flex;
+    text-align: center;
 }
 
 .mainBoxesContainer.show {
