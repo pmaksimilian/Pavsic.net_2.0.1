@@ -56,9 +56,9 @@ h1, h2 {
     overflow-y: hidden;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display:none;
-}
+} */
 
 /* .horizontal-wrapper {
     display: flex;
@@ -152,6 +152,7 @@ h1, h2 {
     border-right: 3px solid var(--option1);
     border-bottom: 3px solid var(--option1);
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 /* MAIN BOXES */

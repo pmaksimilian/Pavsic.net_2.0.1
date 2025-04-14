@@ -1,3 +1,10 @@
+document.getElementById("scrollBtn").addEventListener("click", () => {
+    document.getElementById("firstSection").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+
 
 // let mainTitle = document.getElementsByClassName("mainTitle")[0];
 // let mainTitlePosition = mainTitle.offsetLeft;
