@@ -1,31 +1,31 @@
 
-let mainTitle = document.getElementsByClassName("mainTitle")[0];
-let mainTitlePosition = mainTitle.offsetLeft;
+// let mainTitle = document.getElementsByClassName("mainTitle")[0];
+// let mainTitlePosition = mainTitle.offsetLeft;
 
 
 
 // INTRO ANIMATION
 
-let animationDuration = 7000;
+let animationDuration = 3000;
 
 
 // disable scroll at start
-setTimeout(() => {
-    let main = document.getElementsByClassName("main-wrapper")[0];
-    main.classList.remove("stopScroll");
-}, animationDuration);
+// setTimeout(() => {
+//     let main = document.getElementsByClassName("main-wrapper")[0];
+//     main.classList.remove("stopScroll");
+// }, animationDuration);
 
 // show and hide welcome title and header
-let title = document.getElementsByClassName("mainTitleContainer")[0];
-let header = document.getElementsByClassName("header")[0];
-let boxes = document.getElementsByClassName("mainBoxesContainer")[0];
+// let title = document.getElementsByClassName("mainTitleContainer")[0];
+// let header = document.getElementsByClassName("header")[0];
+// let boxes = document.getElementsByClassName("mainBoxesContainer")[0];
 
-title.classList.add("displayBlock");
+// title.classList.add("displayBlock");
 
-setTimeout(() => {
-    header.classList.add("full");
-    setTimeout(() => {
-        title.classList.remove("displayBlock");
-        boxes.classList.add("show");
-    }, 400);
-}, animationDuration);
+// setTimeout(() => {
+//     header.classList.add("full");
+//     setTimeout(() => {
+//         title.classList.remove("displayBlock");
+//         boxes.classList.add("show");
+//     }, 400);
+// }, animationDuration);
