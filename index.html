@@ -23,9 +23,20 @@
         </div>
         
         <section id="firstSection" class="page flex-center">
-            <h3><a href="mailto:info@pavsic.net">info@pavsic.net</a></h3>
+            <h3 id="email">
+            </h3>
         </section>
     </div>
+
+    <script>
+        // Obfuscated pieces of the email address
+        const user = '&#105;&#110;&#102;&#111;'; // "info"
+        const domain = '&#112;&#97;&#118;&#115;&#105;&#99;&#46;&#110;&#101;&#116;'; // "pavsic.net"
+      
+        // Combine and insert into the DOM
+        const emailSpan = document.getElementById('email');
+        emailSpan.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+      </script>
 
     <script type="text/javascript" src="./src/js/script.js"></script>
 </body>
